@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JP Consulting | Small Business Consulting — Southeast Louisiana</title>
+<meta name="description" content="Small business consulting for Southeast Louisiana. Stop missing calls, find profit leaks, and make better owner decisions." />
+
+<style>
+:root {
+--bg: #0e1116;
+--panel: #151a21;
+--text: #f2f4f8;
+--muted: #b4bccb;
+--accent: #4da3ff;
+--border: rgba(255,255,255,0.08);
+--radius: 14px;
+--max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+margin: 0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.55;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+.container {
+max-width: var(--max);
+margin: 0 auto;
+padding: 24px 20px 80px;
+}
+
+/* Header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.brand {
+font-weight: 700;
+letter-spacing: 0.3px;
+}
+
+.nav a {
+margin-left: 18px;
+font-size: 14px;
+color: var(--muted);
+}
+
+/* Hero */
+.hero {
+background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 48px 40px;
+margin-bottom: 48px;
+}
+
+.hero h1 {
+font-size: 40px;
+line-height: 1.15;
+margin: 0 0 16px;
+}
+
+.hero p {
+font-size: 18px;
+color: var(--muted);
+max-width: 720px;
+margin-bottom: 28px;
+}
+
+.cta {
+display: inline-block;
+padding: 14px 22px;
+background: var(--accent);
+color: #08131f;
+border-radius: 999px;
+font-weight: 600;
+}
+
+/* Section */
+section {
+margin-bottom: 56px;
+}
+
+section h2 {
+font-size: 28px;
+margin-bottom: 12px;
+}
+
+section p.section-intro {
+color: var(--muted);
+max-width: 720px;
+margin-bottom: 32px;
+}
+
+/* Cards */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 20px;
+}
+
+.card {
+background: var(--panel);
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 24px;
+}
+
+.card h3 {
+margin-top: 0;
+margin-bottom: 8px;
+font-size: 18px;
+}
+
+.card p {
+color: var(--muted);
+font-size: 15px;
+}
+
+/* How it works */
+.steps {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 24px;
+margin-top: 32px;
+}
+
+.step span {
+display: block;
+font-weight: 700;
+color: var(--accent);
+margin-bottom: 6px;
+}
+
+/* CTA block */
+.final-cta {
+background: linear-gradient(180deg, rgba(77,163,255,0.15), rgba(77,163,255,0.05));
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 40px;
+text-align: center;
+}
+
+.final-cta h2 {
+margin-top: 0;
+}
+
+.final-cta p {
+color: var(--muted);
+margin-bottom: 24px;
+}
+
+/* Footer */
+footer {
+margin-top: 80px;
+font-size: 13px;
+color: var(--muted);
+text-align: center;
+}
+
+@media (max-width: 600px) {
+.hero h1 { font-size: 32px; }
+.hero { padding: 32px 24px; }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+<div class="brand">JP Consulting</div>
+<nav class="nav">
+<a href="#services">Services</a>
+<a href="#how">How it works</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Stop losing calls.<br>Stop leaking profit.<br>Make better decisions.</h1>
+<p>
+Plain-English consulting for small businesses in Southeast Louisiana.
+We focus on the operational problems that quietly cost you money every month.
+</p>
+<a href="#contact" class="cta">Book a short intro call</a>
+</section>
+
+<section id="services">
+<h2>The problems we fix</h2>
+<p class="section-intro">
+No theory. No long engagements. Just focused work on issues most owners already know exist.
+</p>
+
+<div class="grid">
+<div class="card">
+<h3>Missed Call Revenue Recovery</h3>
+<p>
+If your phone rings while you’re on a job, that lead is usually gone.
+We identify missed calls and help you capture them going forward.
+</p>
+</div>
+
+<div class="card">
+<h3>Profit Leak Finder</h3>
+<p>
+Many businesses are busy but under-earning.
+We identify underpriced services, unprofitable work, and margin killers.
+</p>
+</div>
+
+<div class="card">
+<h3>Owner Decision Support</h3>
+<p>
+What should you raise prices on?
+What should you stop offering?
+We help you decide instead of guessing.
+</p>
+</div>
+
+<div class="card">
+<h3>Lead & Review Flywheel</h3>
+<p>
+Finished jobs should lead to more work.
+We help you follow up consistently and turn work into referrals.
+</p>
+</div>
+</div>
+</section>
+
+<section id="how">
+<h2>How it works</h2>
+
+<div class="steps">
+<div class="step">
+<span>1. Short diagnostic</span>
+<p>We review how calls, revenue, and decisions currently flow.</p>
+</div>
+<div class="step">
+<span>2. Clear findings</span>
+<p>You get a simple summary of what’s costing you money.</p>
+</div>
+<div class="step">
+<span>3. Practical fixes</span>
+<p>We focus only on changes that actually move the needle.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="final-cta">
+<h2>Start with a short conversation</h2>
+<p>
+If you’re busy, stretched thin, and know things could run better,
+a quick intro call is the right place to start.
+</p>
+<a href="mailto:youremail@example.com" class="cta">Email to get started</a>
+</section>
+
+<footer>
+Serving small businesses across Southeast Louisiana
+</footer>
+
+</div>
+</body>
+</html>
