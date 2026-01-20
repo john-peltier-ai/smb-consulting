@@ -1,294 +1,255 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="Fractional product execution for early-stage SaaS founders. Prioritization, backlog grooming, roadmap planning, and launch readiness." />
-<title>JP Consulting | Fractional Product Execution for Founders</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JP Consulting | Small Business Consulting — Southeast Louisiana</title>
+<meta name="description" content="Small business consulting for Southeast Louisiana. Stop missing calls, find profit leaks, and make better owner decisions." />
 
 <style>
-:root{
---bg:#0b1220;
---panel:#0f1b33;
---panel2:#0d1730;
---text:#e9eefc;
---muted:#b8c2e6;
---line:rgba(255,255,255,.12);
---accent:#7aa2ff;
---accent2:#68f0c4;
---shadow: 0 18px 40px rgba(0,0,0,.35);
---radius: 18px;
+:root {
+--bg: #0e1116;
+--panel: #151a21;
+--text: #f2f4f8;
+--muted: #b4bccb;
+--accent: #4da3ff;
+--border: rgba(255,255,255,0.08);
+--radius: 14px;
 --max: 1100px;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-margin:0;
-font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-background:
-radial-gradient(1200px 800px at 15% -10%, rgba(122,162,255,.18), transparent 60%),
-radial-gradient(900px 700px at 95% 0%, rgba(104,240,196,.14), transparent 55%),
-radial-gradient(900px 700px at 40% 110%, rgba(122,162,255,.10), transparent 55%),
-var(--bg);
-color:var(--text);
-line-height:1.5;
-}
-a{color:inherit}
-.wrap{max-width:var(--max); margin:0 auto; padding: 22px 18px 70px;}
-.nav{
-display:flex; align-items:center; justify-content:space-between;
-gap:12px; padding:14px 0 10px;
-}
-.brand{
-display:flex; align-items:center; gap:12px; text-decoration:none;
-}
-.logo{
-width:38px; height:38px; border-radius:14px;
-background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(104,240,196,.9));
-box-shadow: 0 12px 24px rgba(0,0,0,.25);
-}
-.brand b{font-size:16px; letter-spacing:.2px}
-.brand span{display:block; font-size:12px; color:var(--muted)}
-.navlinks{display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end}
-.navlinks a{
-text-decoration:none; font-size:13px; color:var(--muted);
-padding:8px 10px; border-radius:999px; border:1px solid transparent;
-}
-.navlinks a:hover{border-color:var(--line); color:var(--text); background:rgba(255,255,255,.04)}
 
-.hero{
-margin-top:18px;
-border:1px solid var(--line);
-border-radius: calc(var(--radius) + 6px);
-background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));
-box-shadow: var(--shadow);
-overflow:hidden;
-position:relative;
-}
-.hero::before{
-content:"";
-position:absolute; inset:-2px;
-background: radial-gradient(700px 280px at 20% 20%, rgba(104,240,196,.12), transparent 60%),
-radial-gradient(900px 320px at 80% 10%, rgba(122,162,255,.14), transparent 60%);
-pointer-events:none;
-}
-.hero-inner{position:relative; padding:44px 26px}
-.hero h1{
-margin:0;
-font-size: 38px;
-line-height: 1.08;
-letter-spacing: -.4px;
-}
-.hero p{
-margin:14px 0 0;
-max-width: 820px;
-color: var(--muted);
-font-size: 16px;
-}
-.actions{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
-.btn{
-display:inline-flex; align-items:center; justify-content:center;
-gap:10px;
-padding: 11px 14px;
-border-radius: 999px;
-border: 1px solid var(--line);
-background: rgba(255,255,255,.04);
+* { box-sizing: border-box; }
+
+body {
+margin: 0;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+background: var(--bg);
 color: var(--text);
-text-decoration:none;
-font-weight: 600;
-font-size: 13px;
+line-height: 1.55;
 }
-.btn.primary{
-border-color: transparent;
-background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(104,240,196,.9));
-color: #08131f;
-box-shadow: 0 14px 28px rgba(0,0,0,.22);
-}
-.btn:hover{transform: translateY(-1px)}
-.btn:active{transform: translateY(0px)}
 
-.section{margin-top:36px}
-.section h2{
-margin:0;
-font-size: 22px;
-letter-spacing: -.2px;
+a { color: var(--accent); text-decoration: none; }
+
+.container {
+max-width: var(--max);
+margin: 0 auto;
+padding: 24px 20px 80px;
 }
-.sub{
-margin:8px 0 18px;
-color: var(--muted);
-max-width: 820px;
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.brand {
+font-weight: 700;
+letter-spacing: 0.3px;
+}
+
+.nav a {
+margin-left: 18px;
 font-size: 14px;
-}
-
-.grid{
-display:grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 14px;
-}
-.card{
-grid-column: span 6;
-border:1px solid var(--line);
-border-radius: var(--radius);
-background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-padding: 16px;
-}
-.card h3{margin:0; font-size: 15px}
-.card p{margin:8px 0 0; color: var(--muted); font-size: 13px}
-
-.how{
-display:grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 14px;
-}
-.step{
-grid-column: span 4;
-border:1px solid var(--line);
-border-radius: var(--radius);
-background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-padding: 16px;
-}
-.step b{display:block; font-size:13px}
-.step span{display:block; margin-top:8px; color: var(--muted); font-size: 13px}
-
-.cta{
-margin-top: 34px;
-border:1px solid var(--line);
-border-radius: calc(var(--radius) + 6px);
-background: radial-gradient(900px 420px at 30% 0%, rgba(122,162,255,.16), transparent 60%),
-radial-gradient(800px 420px at 80% 20%, rgba(104,240,196,.12), transparent 60%),
-linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.012));
-box-shadow: var(--shadow);
-padding: 26px;
-}
-.cta h2{margin:0; font-size: 22px}
-.cta p{margin:10px 0 0; color: var(--muted); font-size: 14px; max-width: 820px}
-.footer{
-margin-top: 44px;
 color: var(--muted);
-font-size: 12px;
-display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-opacity:.9;
 }
 
-@media (max-width: 760px){
-.card{grid-column: span 12}
-.step{grid-column: span 12}
-.hero h1{font-size: 32px}
+.hero {
+background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 48px 40px;
+margin-bottom: 48px;
+}
+
+.hero h1 {
+font-size: 40px;
+line-height: 1.15;
+margin: 0 0 16px;
+}
+
+.hero p {
+font-size: 18px;
+color: var(--muted);
+max-width: 720px;
+margin-bottom: 28px;
+}
+
+.cta {
+display: inline-block;
+padding: 14px 22px;
+background: var(--accent);
+color: #08131f;
+border-radius: 999px;
+font-weight: 600;
+}
+
+section {
+margin-bottom: 56px;
+}
+
+section h2 {
+font-size: 28px;
+margin-bottom: 12px;
+}
+
+section p.section-intro {
+color: var(--muted);
+max-width: 720px;
+margin-bottom: 32px;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+gap: 20px;
+}
+
+.card {
+background: var(--panel);
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 24px;
+}
+
+.card h3 {
+margin-top: 0;
+margin-bottom: 8px;
+font-size: 18px;
+}
+
+.card p {
+color: var(--muted);
+font-size: 15px;
+}
+
+.steps {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 24px;
+margin-top: 32px;
+}
+
+.step span {
+display: block;
+font-weight: 700;
+color: var(--accent);
+margin-bottom: 6px;
+}
+
+.final-cta {
+background: linear-gradient(180deg, rgba(77,163,255,0.15), rgba(77,163,255,0.05));
+border: 1px solid var(--border);
+border-radius: var(--radius);
+padding: 40px;
+text-align: center;
+}
+
+.final-cta h2 {
+margin-top: 0;
+}
+
+.final-cta p {
+color: var(--muted);
+margin-bottom: 24px;
+}
+
+footer {
+margin-top: 80px;
+font-size: 13px;
+color: var(--muted);
+text-align: center;
+}
+
+@media (max-width: 600px) {
+.hero h1 { font-size: 32px; }
+.hero { padding: 32px 24px; }
 }
 </style>
 </head>
 
 <body>
-<div class="wrap">
-<div class="nav">
-<a class="brand" href="#top" aria-label="JP Consulting Home">
-<div class="logo" aria-hidden="true"></div>
-<div>
-<b>JP Consulting</b>
-<span>Fractional Product Execution</span>
-</div>
-</a>
+<div class="container">
 
-<div class="navlinks">
+<header>
+<div class="brand">JP Consulting</div>
+<nav class="nav">
 <a href="#services">Services</a>
 <a href="#how">How it works</a>
 <a href="#contact">Contact</a>
-</div>
-</div>
+</nav>
+</header>
 
-<section id="top" class="hero">
-<div class="hero-inner">
-<h1>
-Ship faster.<br/>
-Pick better priorities.<br/>
-Reduce product thrash.
-</h1>
+<section class="hero">
+<h1>Stop losing calls.<br>Stop leaking profit.<br>Make better decisions.</h1>
 <p>
-Practical product leadership for early-stage SaaS founders who need execution now —
-clear priorities, build-ready tickets, and launch readiness without hiring a full-time Head of Product.
+Plain-English consulting for small businesses in Southeast Louisiana.
+We focus on the operational problems that quietly cost you money every month.
 </p>
-
-<div class="actions">
-<a class="btn primary" href="https://calendly.com/YOUR-LINK-HERE">Book a short intro call</a>
-<a class="btn" href="#services">See services</a>
-<a class="btn" href="mailto:johnpeltier@gmail.com">Email</a>
-</div>
-</div>
+<a href="#contact" class="cta">Book a short intro call</a>
 </section>
 
-<section id="services" class="section">
-<h2>What I do</h2>
-<p class="sub">No buzzwords. Lightweight structure that forces decisions and keeps delivery moving.</p>
+<section id="services">
+<h2>The problems we fix</h2>
+<p class="section-intro">
+No theory. No long engagements. Just focused work on issues most owners already know exist.
+</p>
 
 <div class="grid">
 <div class="card">
-<h3>Prioritization Workshop</h3>
-<p>Cut noise, align stakeholders, and lock the next 30–60 day execution plan with clear tradeoffs.</p>
+<h3>Missed Call Revenue Recovery</h3>
+<p>If your phone rings while you’re on a job, that lead is usually gone.</p>
 </div>
 
 <div class="card">
-<h3>Weekly Backlog Grooming</h3>
-<p>Turn messy ideas into build-ready tickets with acceptance criteria engineers can ship against.</p>
+<h3>Profit Leak Finder</h3>
+<p>Identify underpriced services, unprofitable customers, and margin killers.</p>
 </div>
 
 <div class="card">
-<h3>Roadmap & Milestone Planning</h3>
-<p>Practical “now / next / later” planning tied to outcomes — not vanity timelines.</p>
+<h3>Owner Decision Support</h3>
+<p>Clear guidance on what to raise, cut, or stop doing.</p>
 </div>
 
 <div class="card">
-<h3>Go-to-Market Support</h3>
-<p>Launch readiness, positioning clarity, internal enablement, and release execution support.</p>
-</div>
-
-<div class="card">
-<h3>Fractional Product Lead</h3>
-<p>Embedded product leadership: cadence, decision ownership, and weekly shipping rhythm.</p>
-</div>
-
-<div class="card">
-<h3>Customer Development</h3>
-<p>Interview plan → signal extraction → decision inputs. Less anecdotes, more actionable insight.</p>
+<h3>Lead & Review Flywheel</h3>
+<p>Turn completed work into repeat business and referrals.</p>
 </div>
 </div>
 </section>
 
-<section id="how" class="section">
+<section id="how">
 <h2>How it works</h2>
-<p class="sub">Simple cadence. Visible progress. Minimal overhead.</p>
 
-<div class="how">
+<div class="steps">
 <div class="step">
-<b>1) Short diagnostic</b>
-<span>Stage, bottlenecks, and where delivery is stalling (or revenue is at risk).</span>
+<span>1. Short diagnostic</span>
+<p>We review calls, revenue, and decision bottlenecks.</p>
 </div>
 <div class="step">
-<b>2) Execution plan</b>
-<span>Priorities, weekly cadence, and what “done” means for the next push.</span>
+<span>2. Clear findings</span>
+<p>You get a simple summary of what’s costing you money.</p>
 </div>
 <div class="step">
-<b>3) Ship weekly</b>
-<span>Requirements, grooming, stakeholder alignment, and clear next decisions.</span>
+<span>3. Practical fixes</span>
+<p>Only changes that actually move the needle.</p>
 </div>
 </div>
 </section>
 
-<section id="contact" class="cta">
+<section id="contact" class="final-cta">
 <h2>Start with a short conversation</h2>
 <p>
-If you’re shipping slowly, debating priorities, or approaching a launch,
-a quick intro call is the fastest way to see if this fits.
+If you’re busy, stretched thin, and know things could run better,
+a quick intro call is the right place to start.
 </p>
-<div class="actions" style="margin-top:14px">
-<a class="btn primary" href="https://calendly.com/YOUR-LINK-HERE">Book a short intro call</a>
-<a class="btn" href="mailto:johnpeltier@gmail.com">Email to get started</a>
-</div>
+<a href="mailto:youremail@example.com" class="cta">Email to get started</a>
 </section>
 
-<div class="footer">
-<div>© 2026 JP Consulting</div>
-<div>Remote-friendly • US-based • Founder-first execution</div>
-</div>
+<footer>
+Serving small businesses across Southeast Louisiana
+</footer>
+
 </div>
 </body>
 </html>
